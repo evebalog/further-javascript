@@ -7,11 +7,11 @@
   NoteListView.prototype.returnHTML = function(){
     var listItemsHTML = ''
     this._noteList.notes().forEach(function(item){
-      listItemsHTML += '<li><div>' + item.text() + '<div><liv>';
+      listItemsHTML += '<li><div>' + item.text() + '</div></li>';
     })
     return '<ul>' + listItemsHTML + '</ul>'
   };
 
   exports.NoteListView = NoteListView;
-  
+
 })(this);

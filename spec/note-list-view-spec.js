@@ -8,3 +8,11 @@ function listViewInstantiateWithList() {
 }
 
 listViewInstantiateWithList();
+
+function listViewReturnsHTML() {
+  assert.isTrue(
+    listView.returnHTML() === '<ul><li><div>This is the first note</div></li><li><div>This is the second note</div></li></ul>'
+  );
+}
+
+listViewReturnsHTML();
