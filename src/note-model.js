@@ -4,7 +4,7 @@
      this._text = (string)
    };
 
-    Note.prototype.text = function() {
+    Note.prototype.showNote = function() {
      return this._text
    };
 
