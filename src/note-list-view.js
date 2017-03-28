@@ -6,7 +6,7 @@
 
   NoteListView.prototype.returnHTML = function(){
     var listItemsHTML = ''
-    this._noteList.notes().forEach(function(item){
+    this._noteList.listNotes().forEach(function(item){
       listItemsHTML += '<li><div>' + item.showNote() + '</div></li>';
     })
     return '<ul>' + listItemsHTML + '</ul>'
