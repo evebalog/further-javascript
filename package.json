@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/evebalog/further-javascript#readme",
   "dependencies": {
-    "hapi": "^16.1.0"
+    "hapi": "^16.1.0",
+    "http-server": "^0.9.0"
   },
   "devDependencies": {
+    "http-server": "^0.9.0",
     "jasmine-node": "^1.14.5"
   }
 }
