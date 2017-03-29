@@ -1,10 +1,10 @@
 (function(exports) {
 
-  function NoteListView(noteList) {
+  function View(noteList) {
     this._noteList = noteList;
   };
 
-  NoteListView.prototype.returnHTML = function(){
+  View.prototype.returnHTML = function(){
     var listItemsHTML = ''
     this._noteList.listNotes().forEach(function(item){
       listItemsHTML += '<li><div>' + item.showNote() + '</div></li>';
@@ -12,6 +12,6 @@
     return '<ul>' + listItemsHTML + '</ul>'
   };
 
-  exports.NoteListView = NoteListView;
+  exports.View = View;
 
 })(this);
