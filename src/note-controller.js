@@ -7,9 +7,10 @@
     this._noteList = noteList;
   };
 
-  NoteController.prototype.insertHTML = function (view) {
-    var myNotes = view.returnHTML()
-    var element = document.getElementById("app")
+  NoteController.prototype.insertHTML = function (view, element = document.getElementById("app")) {
+    var myNotes = view.returnHTML();
+    var element = element;
+    // var element = document.getElementById("app")
     element.innerHTML = myNotes
   };
 
