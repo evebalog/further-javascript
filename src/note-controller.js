@@ -7,7 +7,7 @@
     this._noteList = noteList;
   };
 
-  NoteController.prototype.getHTML = function (view) {
+  NoteController.prototype.insertHTML = function (view) {
     var myNotes = view.returnHTML()
     var element = document.getElementById("app")
     element.innerHTML = myNotes
