@@ -1,11 +1,11 @@
 test({
 
-beforeEach: function() {
-var list = new List();
-list.addNote('This is the first note');
-list.addNote('This is the second note');
-var listView = new View(list);
-},
+// beforeEach: function() {
+// var list = new List();
+// list.addNote('This is the first note');
+// list.addNote('This is the second note');
+// var listView = new View(list);
+// },
 
   viewInstantiatesWithList: function() {
     var list = new List();
@@ -21,7 +21,7 @@ viewReturnsHTML: function() {
   list.addNote('This is the second note');
   var listView = new View(list);
   assert.isTrue(
-    listView.returnHTML() === '<ul><li><div>This is the first note</div></li><li><div>This is the second note</div></li></ul>',
+    listView.returnHTML() === '<ul><li><div>This is the first no</div></li><li><div>This is the second n</div></li></ul>',
   'viewReturnsHTML');
 }
 

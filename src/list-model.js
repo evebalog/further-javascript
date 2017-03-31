@@ -9,7 +9,8 @@
   };
 
   List.prototype.addNote = function(text) {
-    this._notes.push(new Note(text));
+    var id = this._notes.length
+    this._notes.push(new Note(text, id));
   };
 
   exports.List = List

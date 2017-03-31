@@ -2,7 +2,7 @@
 test({
  showNoteMethodReturnsString: function() {
    var newNote = new Note("I am a note");
-   assert.isEqual(newNote.showNote(), "I am a note", 'showNoteMethodReturnsString')
+   assert.isEqual("I am a note", newNote.showNote(), 'showNoteMethodReturnsString')
  },
 
 newNoteInstantiatesWithString: function() {

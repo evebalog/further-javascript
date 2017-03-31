@@ -11,6 +11,5 @@ test({
     var singleNoteView = new SingleNoteView(newNote)
     var returnedString = singleNoteView.returnHTMLString()
     assert.isEqual("<div>I am a note</div>", returnedString, "singleNoteViewreturnsHTMLString")
-    console.log(singleNoteView);
   }
 })

@@ -5,15 +5,21 @@ listHasArrayOfNotes: function()  {
   assert.isTrue(Array.isArray(newList._notes), 'listHasArrayOfNotes');
 },
 
-
-
 // list has a method that creates and stores a new single note
 listCanCreateAndStoreNotes: function() {
   var newList = new List();
   newList.addNote("This is my note");
   newList.addNote("This is my other note");
-  console.log(newList._notes)
   assert.isEqual(newList.listNotes()[0].showNote(), "This is my note", 'listCanCreateAndStoreNotes');
   assert.isEqual(newList.listNotes()[1].showNote(), "This is my other note", 'listCanCreateAndStoreNotes');
+},
+
+noteHasAnId: function() {
+  var newList = new List();
+  newList.addNote("This is my note");
+  newList.addNote("This is my other note");
+  assert.isTrue(newList.listNotes()[0]._id === 0, 'noteHasAnId');
+  assert.isTrue(newList.listNotes()[1]._id === 1, 'noteHasAnId');
 }
+
 })
